@@ -21,11 +21,12 @@ def get_transactions():
 @app.route('/add_transaction', methods=['GET', 'POST'])
 def add_transaction():
     if request.method == 'POST':        
-        id = len(transactions) + 1
-        date = request.form.get('date')
-        amount = request.form.get('amount', 0, type=int)
         transactions.append(
-            {'id': id, 'date': date, 'amount': amount}
+            {
+                'id': len(transactions) + 1, 
+                'date': request.form.get('date'), 
+                'amount': float(request.form.get('amount', 0))
+            }
         )
         return redirect(url_for('get_transactions'))
     else:
@@ -43,15 +44,20 @@ def edit_transaction(transaction_id):
     # Handle POST request to update the transaction
     if request.method == 'POST':
         transaction['date'] = request.form.get('date', transaction['date'])
-        transaction['amount'] = int(request.form.get('amount', transaction['amount']))
+        transaction['amount'] = float(request.form.get('amount', transaction['amount']))
     return redirect(url_for('get_transactions'))
        
    
 # Delete operation
 @app.route('/delete/<int:transaction_id>', methods=['POST'])
 def delete_transaction(transaction_id):
-    global transactions
-    transactions = [trans for trans in transactions if trans['id'] != transaction_id]
+    for txn in transactions:
+        if txn['id'] == transaction_id:
+            transactions.remove(txn)
+            break
+        else:
+            return {"message": "Transaction not found"}, 404
+    
     return redirect(url_for('get_transactions'))
 
 
