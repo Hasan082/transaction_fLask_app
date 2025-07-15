@@ -1,4 +1,4 @@
-# 💸 TransactionApp
+# TransactionApp
 
 A simple Flask web application to perform **CRUD (Create, Read, Update, Delete)** operations on a list of financial transactions.
 
