@@ -69,7 +69,7 @@ The app will be available at:
 
 ---
 
-## 📚 Routes Overview
+## Routes Overview
 
 | Route                          | Method(s) | Description                  |
 | ------------------------------ | --------- | ---------------------------- |
