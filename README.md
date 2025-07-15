@@ -6,10 +6,10 @@ A simple Flask web application to perform **CRUD (Create, Read, Update, Delete)*
 
 Features
 
-- ✅ View all transactions
-- ➕ Add a new transaction
-- ✏️ Edit an existing transaction
-- ❌ Delete a transaction
+- View all transactions
+- Add a new transaction
+- Edit an existing transaction
+- Delete a transaction
 
 ---
 
