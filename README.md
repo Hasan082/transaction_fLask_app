@@ -27,7 +27,7 @@ transactions = [
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 TransactionApp/
@@ -41,7 +41,7 @@ TransactionApp/
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the repository
 
