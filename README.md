@@ -65,7 +65,7 @@ python app.py
 ```
 
 The app will be available at:
-http://localhost:9001](http://localhost:9001)
+(http://localhost:9001](http://localhost:9001)
 
 ---
 
@@ -80,20 +80,14 @@ http://localhost:9001](http://localhost:9001)
 
 ---
 
-## 📌 Notes
+## Notes
 
 * All data is stored **in-memory**, meaning it will reset when the server restarts.
 * For production use, consider connecting to a **database** (e.g., SQLite, PostgreSQL).
 
 ---
 
-## 🧑‍💻 Author
-
-Created by \[Your Name] — feel free to use and improve it!
-
----
-
-## 🪪 License
+## License
 
 MIT License – use it freely for personal or commercial projects.
 
