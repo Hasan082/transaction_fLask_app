@@ -13,7 +13,7 @@ Features
 
 ---
 
-## 🧾 Sample Data
+## Sample Data
 
 The app starts with a predefined list of transactions:
 
