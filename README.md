@@ -65,7 +65,7 @@ python app.py
 ```
 
 The app will be available at:
-👉 [http://localhost:9001](http://localhost:9001)
+http://localhost:9001](http://localhost:9001)
 
 ---
 
