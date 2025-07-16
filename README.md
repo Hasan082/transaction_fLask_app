@@ -91,6 +91,3 @@ The app will be available at:
 
 MIT License – use it freely for personal or commercial projects.
 
-```
-
-
